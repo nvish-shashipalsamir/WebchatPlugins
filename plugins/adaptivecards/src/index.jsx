@@ -22,7 +22,7 @@ const AdaptiveCards = (props) => {
             "body": [
                 {
                     "type": "TextBlock",
-                    "text": "Let's connect you to the right people!",
+                    "text": "Let's connect you to the right people! Test Widegt",
                     "wrap": true,
                     "fontType": "Default",
                     "size": "Large",
