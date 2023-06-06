@@ -66,7 +66,7 @@ const AdaptiveCards = (props) => {
             },
             "containerStyles": {
                 "default": {
-                    "backgroundColor": "#FFFFFF",
+                    "backgroundColor": "#cc0000",
                     "foregroundColors": {
                         "default": {
                             "default": "#000000",
