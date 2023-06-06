@@ -36,11 +36,11 @@ const AdaptiveCards = (props) => {
                     //"fontFamily": "'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
                     "fontFamily": theme.fontFamily,
                     "fontSizes": {
-                        "small": 12,
-                        "default": 14,
-                        "medium": 17,
-                        "large": 21,
-                        "extraLarge": 26
+                        "small": 30,
+                        "default": 30,
+                        "medium": 30,
+                        "large": 30,
+                        "extraLarge": 30
                     },
                     "fontWeights": {
                         "lighter": 200,
@@ -69,19 +69,19 @@ const AdaptiveCards = (props) => {
                     "backgroundColor": "#cc0000",
                     "foregroundColors": {
                         "default": {
-                            "default": "#000000",
-                            "subtle": "#767676",
+                            "default": "#cc0000",
+                            "subtle": "#cc0000",
                             highlightColors:{
-                                "default": "#000000",
-                                "subtle": "#767676",
+                                "default": "#cc0000",
+                                "subtle": "#cc0000",
                             }
                         },
                         "accent": {
-                            "default": "#0063B1",
-                            "subtle": "#0063B1",
+                            "default": "#cc0000",
+                            "subtle": "#cc0000",
                             highlightColors:{
-                                "default": "#0063B1",
-                                "subtle": "#0063B1",
+                                "default": "#cc0000",
+                                "subtle": "#cc0000",
                             }
                         },
                         "attention": {
@@ -222,7 +222,7 @@ const AdaptiveCards = (props) => {
                     }
                 },
                 "attention": {
-                    "backgroundColor": "#FFC5B2",
+                    "backgroundColor": "#cc0000",
                     "foregroundColors": {
                         "default": {
                             "default": "#333333",
