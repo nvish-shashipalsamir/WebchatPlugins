@@ -33,7 +33,8 @@ const AdaptiveCards = (props) => {
             "supportsInteractivity": true,
             "fontTypes": {
                 "default": {
-                    "fontFamily": "'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
+                    //"fontFamily": "'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
+                    "fontFamily": theme.fontFamily,
                     "fontSizes": {
                         "small": 12,
                         "default": 14,
@@ -45,7 +46,7 @@ const AdaptiveCards = (props) => {
                         "lighter": 200,
                         "default": 400,
                         "bolder": 600
-                    }
+                    },
                 },
                 "monospace": {
                     "fontFamily": "'Courier New', Courier, monospace",
@@ -60,8 +61,8 @@ const AdaptiveCards = (props) => {
                         "lighter": 200,
                         "default": 400,
                         "bolder": 600
-                    }
-                }
+                    },
+                },
             },
             "containerStyles": {
                 "default": {
@@ -69,23 +70,43 @@ const AdaptiveCards = (props) => {
                     "foregroundColors": {
                         "default": {
                             "default": "#000000",
-                            "subtle": "#767676"
+                            "subtle": "#767676",
+                            highlightColors:{
+                                "default": "#000000",
+                                "subtle": "#767676",
+                            }
                         },
                         "accent": {
                             "default": "#0063B1",
-                            "subtle": "#0063B1"
+                            "subtle": "#0063B1",
+                            highlightColors:{
+                                "default": "#0063B1",
+                                "subtle": "#0063B1",
+                            }
                         },
                         "attention": {
                             "default": "#FF0000",
-                            "subtle": "#DDFF0000"
+                            "subtle": "#DDFF0000",
+                            highlightColors:{
+                                "default": "#FF0000",
+                                "subtle": "#DDFF0000",
+                            }
                         },
                         "good": {
                             "default": "#54a254",
-                            "subtle": "#DD54a254"
+                            "subtle": "#DD54a254",
+                            highlightColors:{
+                                "default": "#54a254",
+                                "subtle": "#DD54a254",
+                            }
                         },
                         "warning": {
                             "default": "#c3ab23",
-                            "subtle": "#DDc3ab23"
+                            "subtle": "#DDc3ab23",
+                            highlightColors:{
+                                "default": "#c3ab23",
+                                "subtle": "#DDc3ab23",
+                            }
                         }
                     }
                 },
@@ -94,24 +115,44 @@ const AdaptiveCards = (props) => {
                     "foregroundColors": {
                         "default": {
                             "default": "#000000",
-                            "subtle": "#767676"
+                            "subtle": "#767676",
+                            highlightColors:{
+                                "default": "#000000",
+                                "subtle": "#767676",
+                            }
                         },
                         "accent": {
                             "default": "#2E89FC",
-                            "subtle": "#882E89FC"
+                            "subtle": "#882E89FC",
+                            highlightColors:{
+                                "default": "#2E89FC",
+                                "subtle": "#882E89FC",
+                            }
                         },
                         "attention": {
                             "default": "#FF0000",
-                            "subtle": "#DDFF0000"
+                            "subtle": "#DDFF0000",
+                            highlightColors:{
+                                "default": "#FF0000",
+                                "subtle": "#DDFF0000",
+                            }
                         },
                         "good": {
                             "default": "#54a254",
-                            "subtle": "#DD54a254"
+                            "subtle": "#DD54a254",
+                            highlightColors:{
+                                "default": "#54a254",
+                                "subtle": "#DD54a254",
+                            }
                         },
                         "warning": {
                             "default": "#c3ab23",
-                            "subtle": "#DDc3ab23"
-                        }
+                            "subtle": "#DDc3ab23",
+                            highlightColors:{
+                                "default": "#c3ab23",
+                                "subtle": "#DDc3ab23",
+                            }
+                        },
                     }
                 },
                 "accent": {
@@ -254,30 +295,31 @@ const AdaptiveCards = (props) => {
             },
             "actions": {
                 "maxActions": 5,
-                "spacing": "default",
+                "spacing": 5,
                 "buttonSpacing": 8,
                 "showCard": {
-                    "actionMode": "inline",
-                    "inlineTopMargin": 8
+                    "actionMode": 0,
+                    "inlineTopMargin": 8,
                 },
-                "actionsOrientation": "horizontal",
-                "actionAlignment": "stretch"
+                "actionsOrientation": 0,
+                "actionAlignment": 3,
+
             },
             "adaptiveCard": {
                 "allowCustomStyle": false
             },
             "imageSet": {
-                "imageSize": "medium",
-                "maxImageHeight": 100
+                "imageSize": 50,
+                "maxImageHeight": 100,
             },
             "factSet": {
                 "title": {
-                    "color": "default",
-                    "size": "default",
+                    "color": 0,
+                    "size": 1,
                     "isSubtle": false,
-                    "weight": "bolder",
+                    "weight": 2,
                     "wrap": true,
-                    "maxWidth": 150
+                    "maxWidth": 150,
                 },
                 "value": {
                     "color": "default",
@@ -289,6 +331,7 @@ const AdaptiveCards = (props) => {
                 "spacing": 8
             }
         }
+
 
         return (
             <AdaptiveCard
