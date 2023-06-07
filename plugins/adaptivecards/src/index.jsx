@@ -38,7 +38,7 @@ const AdaptiveCards = (props) => {
                         "small": 12,
                         "default": 14,
                         "medium": 17,
-                        "large": 60,
+                        "large": 21,
                         "extraLarge": 26
                     },
                     "fontWeights": {
